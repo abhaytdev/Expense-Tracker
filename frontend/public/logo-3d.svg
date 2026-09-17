@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+    <linearGradient id="flap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="50" cy="90" rx="28" ry="4" fill="#0F172A" opacity="0.15"/>
+  <rect x="14" y="36" width="72" height="44" rx="10" fill="url(#body)"/>
+  <path d="M14 46 Q50 26 86 46 L86 54 Q50 38 14 54 Z" fill="url(#flap)"/>
+  <rect x="58" y="54" width="20" height="14" rx="3" fill="#0F172A" opacity="0.25"/>
+  <circle cx="72" cy="32" r="14" fill="url(#coin)" stroke="#FFFDF5" stroke-width="1.5"/>
+  <path d="M65 32 L70 37 L80 24" fill="none" stroke="#FFFDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,29 @@
+# --- Backend (Maven / Java) ---
+backend/target/
+*.class
+*.log
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+!backend/src/main/resources/application.properties.example
+
+# Keep the real application.properties out of GitHub if it ever holds a real
+# password. Uncomment the next line once you've copied your real settings
+# into application.properties locally - until then it's fine to commit as-is
+# since it only ships placeholder values.
+# backend/src/main/resources/application.properties
+
+# --- Frontend (Node / Vite) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+npm-debug.log*
+
+# --- IDE ---
+.vscode/
+.idea/
+*.iml
+
+# --- OS ---
+.DS_Store
+Thumbs.db

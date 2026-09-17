@@ -1,0 +1,113 @@
+.dashboard-hero {
+  background: linear-gradient(135deg, #EFF4FF 0%, #F8FAFC 100%);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-soft);
+}
+
+.dashboard-hero-text h1 {
+  color: var(--dark-primary);
+  font-size: 1.9rem;
+}
+
+.dashboard-hero-tagline {
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.dashboard-hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.dashboard-hero-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: perspective(800px) rotateY(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-hero-visual:hover {
+  transform: perspective(800px) rotateY(-2deg);
+}
+
+.dashboard-hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(6px);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.dashboard-hero-blob--blue {
+  width: 140px;
+  height: 140px;
+  background: #93C5FD;
+  top: -10px;
+  left: 10px;
+}
+
+.dashboard-hero-blob--green {
+  width: 100px;
+  height: 100px;
+  background: #86EFAC;
+  bottom: 10px;
+  right: 20px;
+}
+
+.dashboard-hero-caption {
+  margin-top: 12px;
+  font-weight: 600;
+  color: var(--dark-primary);
+  z-index: 1;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.summary-card {
+  background: var(--card-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+  border-left: 4px solid var(--border-color);
+}
+
+.summary-card-title {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted-color);
+}
+
+.summary-card-value {
+  margin: 6px 0 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.summary-card--income { border-left-color: var(--income-color); }
+.summary-card--expense { border-left-color: var(--expense-color); }
+.summary-card--balance { border-left-color: var(--primary-color); }
+.summary-card--count { border-left-color: var(--accent-color); }
+
+.dashboard-recent {
+  background: var(--card-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+}

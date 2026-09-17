@@ -1,0 +1,50 @@
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color);
+  z-index: 999;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.splash-title {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  color: var(--dark-primary);
+}
+
+.splash-subtitle {
+  color: var(--muted-color);
+  margin-bottom: 8px;
+}
+
+.splash-loader {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.splash-loader span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  animation: splashPulse 1.2s ease-in-out infinite;
+}
+
+.splash-loader span:nth-child(2) { animation-delay: 0.15s; }
+.splash-loader span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes splashPulse {
+  0%, 80%, 100% { opacity: 0.25; transform: scale(0.8); }
+  40% { opacity: 1; transform: scale(1); }
+}

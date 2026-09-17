@@ -1,0 +1,48 @@
+.transaction-form {
+  background: var(--card-color);
+  padding: 24px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.profile-card {
+  background: var(--card-color);
+  padding: 28px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-meta {
+  border-top: 1px solid var(--border-color);
+  padding-top: 16px;
+}
+
+.profile-meta p {
+  margin: 0 0 4px;
+}
+
+.profile-meta-item {
+  font-size: 0.85rem;
+  color: var(--muted-color);
+}
+
+.help-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.help-item {
+  background: var(--card-color);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.help-item h3 {
+  font-size: 1rem;
+  color: var(--dark-primary);
+}
